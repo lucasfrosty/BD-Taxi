@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context="com.example.thiago.bancodetaxi.Activitys.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#232222"
+        android:elevation="4dp">
+
+        <Switch
+            android:layout_marginTop="10dp"
+            android:text="Cliente"
+            android:drawableLeft="@drawable/cliente_icon"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mySwitch"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/registerScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/textLogin"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:id="@+id/editTextLogin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Senha"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/textPassword"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:id="@+id/editTextPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nome"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/textView1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:id="@+id/editText1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Endereço"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/editText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:id="@+id/editText2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nome"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:id="@+id/textView3"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/editText3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Data Admissão"
+                android:textStyle="bold"
+                android:inputType="date"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:id="@+id/textView4"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/editText4"/>
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="200dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="Cadastrar"
+                android:id="@+id/buttonConfirm"
+                android:onClick="onClickConfirm"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
